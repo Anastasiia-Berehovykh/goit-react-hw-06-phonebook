@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 import s from './ContactList.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import actions from '../redux/contactsActions';
@@ -30,3 +30,8 @@ export default function ContactList() {
     </div>
 )
 } 
+ContactList.propTypes = {
+    id: PropTypes.string,
+    userName: PropTypes.string,
+    userNumber: PropTypes.string,
+  };

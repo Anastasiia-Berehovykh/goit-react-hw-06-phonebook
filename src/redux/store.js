@@ -1,5 +1,5 @@
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
-// import logger from "redux-logger";
+
 import contactsReducer from './contactsReducer';
 import { persistStore, persistReducer, FLUSH,
     REHYDRATE,
@@ -8,7 +8,7 @@ import { persistStore, persistReducer, FLUSH,
     PURGE,
     REGISTER } from 'redux-persist'
 import localStorage from 'redux-persist/lib/storage';
-// import { mySlice } from "./slice";
+
 
 const middleware = [...getDefaultMiddleware({
     serializableCheck: {
